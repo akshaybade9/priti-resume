@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priti Nagargoje - Resume</title>
+
+  <!-- html2canvas + jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0 10px;
+      background: #f2f4f8;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 5px solid #1abc9c;
+      max-width: 794px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background: #1abc9c;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background: #16a085;
+      border-radius: 5px;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      background: #149174;
+    }
+
+    section {
+      max-width: 794px;
+      margin: 0.8rem auto;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #1abc9c;
+      padding-bottom: 0.3rem;
+      font-size: 16px;
+    }
+
+    h3 {
+      color: #34495e;
+      margin-top: 1rem;
+      font-size: 15px;
+    }
+
+    p,
+    li {
+      font-size: 12px;
+      line-height: 1.5;
+      margin: 0.3rem 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .experience-block {
+      margin: 1.2rem auto;
+      padding: 0.8rem 1rem;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      border-bottom: 2px dashed #bbb;
+      page-break-inside: avoid;
+    }
+
+    .download-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .download-buttons button {
+      background: #2980b9;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .download-buttons button:hover {
+      background: #2471a3;
+    }
+
+    .pdf-export-mode {
+      width: 794px;
+      font-size: 12px;
+    }
+
+    .pdf-export-mode .download-buttons {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="download-status" style="
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: none;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-size: 14px;
+  max-width: 90%;
+  text-align: center;
+"></div>
+
+
+  <div id="resume-content">
+    <header>
+      <h1>PRITI NAGARGOJE</h1>
+      <p>Associate Software Tester</p>
+      <p>Email: pritinagargoje46@gmail.com | Mobile: 8850525218 |
+        Location: Pune, Maharashtra</p>
+    </header>
+
+    <nav>
+      <a href="#summary">Summary</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#languages">Personal Profile</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#declaration">Declaration</a>
+    </nav>
+
+    <section id="summary">
+      <h2>SUMMARY</h2>
+      <p>To secure a position in a progressive organization that gives a scope to enhance my knowledge and
+        utilize my IT skills towards the organization's growth.</p>
+    </section>
+
+    <section id="skills">
+      <h2>TECHNICAL SKILLS</h2>
+      <ul>
+        <li><strong>Testing Tools:</strong> Selenium WebDriver , Selenium Grid , Junit , TestNG , Maven , Autoit ,
+          Sikuli , API Testing , Apache POI – Excel , Log4j , Properties File</li>
+        <li><strong>Automation Framework:</strong> TestNG Framework , Cucumber , DataDriven Testing ,POM</li>
+        <li><strong>Other Too:</strong>SQL</li>
+        <li><strong>Core Java:</strong> Good understanding of Core Java concepts including OOPS , Array , String class ,
+          Exception Handling and Collection.</li>
+        <li><strong>Database:</strong> MS SQL Server</li>
+        <li><strong>Methodologies:</strong> Agile (Scrum)</li>
+        <li><strong>Documentation:</strong> Jira, Confluence</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>WORK EXPERIENCE</h2>
+    </section>
+
+    <section class="experience-block">
+      <h3>Fyntune Solution Pvt, Navi</h3>
+      <p><strong>Role:</strong> Quality Analyst</p>
+      <p><strong>Duration:</strong> May 2023 - June 2024</p>
+      <p><strong>Project:</strong> Affinity-Web Application</p>
+      <p><strong>Responsibilities:</strong></p>
+      <ul>
+
+        <li>Test Planning & Requirement Analysis
+        <li>Understanding insurance domain concepts </li>
+        <li>Conducted functional testing of insurance software applications, validation system behavior,
+          and as per business requirements. </li>
+        <li>Identifying test scenarios based on insurance workflows.</li>
+        <li>Test Case Design & Execution
+          . Writing detailed test cases covering policy issuance
+          . Performing functional, regression, smoke, and sanity testing.
+          . Executing test cases manually and using automation tools.</li>
+        <li>Defect Reporting & Tracking
+          . Tracking defects using tools like using GitHub.
+          . Helping troubleshoot issues.</li>
+        <li> API Testing (By using Postman)
+          Testing API integrations (e.g., REST) used for policy data exchange.</li>
+        <li> Cross browser Testing.</li>
+        <li> Conducting post-release/post-implementation testing</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>EDUCATION</h2>
+      <p><strong>B.E Electical Engineering</strong><br />
+        A.C. Patil College of Engineering,
+        Kharghar, Navi Mumbai 2016 (6.8 CGPA)</p>
+    </section>
+
+    <section id="languages">
+      <h2>PERSONAL PROFILE</h2>
+      <ul>
+        <li><strong>Full name:</strong> Priti Akshay Bade.</li>
+        <li><strong>Father’s name:</strong> Rajendra
+          G.Nagargoje</li>
+        <li><strong>Marital status:</strong> Married.</li>
+        <li><strong>Date Of Birth:</strong> 09 Jan 1995.</li>
+        <li><strong>Languages:</strong> English, Marathi, Hindi</li>
+        <li><strong>Nationality:</strong> Indian.</li>
+
+
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>CERTIFICATIONS</h2>
+      <ul>
+        <li>Manual Software Testing - Udemy</li>
+      </ul>
+    </section>
+
+    <section id="declaration">
+      <h2>DECLARATION</h2>
+      <p>I hereby declare that all the information furnished above is true to the best of my knowledge and belief.</p>
+      <p>- Priti R.Nagargoje</p>
+
+      <div class="download-buttons">
+        <button onclick="generatePDF()">Download PDF</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+  async function generatePDF() {
+    const showMessage = (message, bgColor = '#27ae60') => {
+      const status = document.getElementById('download-status');
+      status.textContent = message;
+      status.style.backgroundColor = bgColor;
+      status.style.display = 'block';
+      setTimeout(() => {
+        status.style.display = 'none';
+      }, 3000);
+    };
+
+    showMessage("📄 Download started...", '#27ae60');
+
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF('p', 'pt', 'a4');
+    const resume = document.getElementById('resume-content');
+    const sections = resume.querySelectorAll('section');
+    const headerElement = resume.querySelector('header');
+
+    const pageWidth = pdf.internal.pageSize.getWidth();
+    const pageHeight = pdf.internal.pageSize.getHeight();
+    const marginTop = 135, spacing = 4;
+    let currentY = marginTop, pageNumber = 1;
+
+    // Capture fixed-size header
+    const headerWrapper = document.createElement('div');
+    headerWrapper.className = 'pdf-export-mode';
+    headerWrapper.style.width = '794px';
+    headerWrapper.style.position = 'absolute';
+    headerWrapper.style.left = '-10000px';
+    headerWrapper.style.visibility = 'hidden';
+    headerWrapper.appendChild(headerElement.cloneNode(true));
+    document.body.appendChild(headerWrapper);
+
+    const headerCanvas = await html2canvas(headerWrapper, {
+      scale: 2,
+      useCORS: true,
+      backgroundColor: '#fff',
+      width: 794
+    });
+
+    document.body.removeChild(headerWrapper);
+
+    const headerImg = headerCanvas.toDataURL('image/jpeg', 1.0);
+    const headerHeight = headerCanvas.height * (pageWidth - 80) / headerCanvas.width;
+
+    const addHeader = () => pdf.addImage(headerImg, 'JPEG', 40, 30, pageWidth - 80, headerHeight);
+    const addFooter = () => {
+      pdf.setFontSize(10);
+      pdf.setTextColor('#666');
+      pdf.text(`Page ${pageNumber}`, pageWidth - 60, pageHeight - 20);
+    };
+
+    for (let section of sections) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'pdf-export-mode';
+      wrapper.style.width = '794px';
+      wrapper.style.position = 'absolute';
+      wrapper.style.left = '-10000px';
+      wrapper.style.visibility = 'hidden';
+      wrapper.appendChild(section.cloneNode(true));
+      document.body.appendChild(wrapper);
+
+      const canvas = await html2canvas(wrapper, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: '#fff',
+        width: 794
+      });
+
+      document.body.removeChild(wrapper);
+
+      const imgData = canvas.toDataURL('image/jpeg', 1.0);
+      const imgWidth = pageWidth - 80;
+      const imgHeight = canvas.height * imgWidth / canvas.width;
+
+      if (currentY + imgHeight > pageHeight - 60) {
+        pdf.addPage();
+        pageNumber++;
+        currentY = marginTop;
+      }
+
+      addHeader();
+      addFooter();
+      pdf.addImage(imgData, 'JPEG', 40, currentY, imgWidth, imgHeight);
+      currentY += imgHeight + spacing;
+    }
+
+    pdf.save('Priti_Nagargoje_Resume.pdf');
+    showMessage("✅ Resume downloaded successfully!", '#27ae60');
+  }
+</script>
+
+  
+</body>
+
+</html>
